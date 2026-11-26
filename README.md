@@ -70,10 +70,6 @@ Quando algum dado está errado, o JavaScript lança um erro (`throw new Error`),
 - **Imagens** (`img/`): ilustrações em SVG criadas para este projeto com auxílio de inteligência artificial (Claude, da Anthropic).
 - **Valores de gravidade dos planetas:** NASA – Planetary Fact Sheet (https://nssdc.gsfc.nasa.gov/planetary/factsheet/).
 
-## Uso de inteligência artificial
-
-Este projeto foi desenvolvido com auxílio da ferramenta de inteligência artificial **Claude**.
-
 ## Autor
 
 Gustavo Batistella
