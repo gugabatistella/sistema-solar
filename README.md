@@ -15,7 +15,7 @@ A página apresenta os planetas, uma lista com a ordem deles a partir do Sol, cu
 ## Estrutura do projeto
 
 ```
-pagina-tema-livre/
+sistema-solar/
 ├── index.html
 ├── css/
 │   └── style.css
