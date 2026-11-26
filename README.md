@@ -16,13 +16,13 @@ A página apresenta os planetas, uma lista com a ordem deles a partir do Sol, cu
 
 ```
 pagina-tema-livre/
-├── index.html        → estrutura e conteúdo da página
+├── index.html
 ├── css/
-│   └── style.css     → aparência da página
+│   └── style.css
 ├── js/
-│   └── script.js     → validação do formulário e cálculo
-├── img/              → imagens da página
-└── README.md         → documentação do projeto
+│   └── script.js
+├── img/
+└── README.md
 ```
 
 ## Como executar
