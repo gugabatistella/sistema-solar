@@ -72,7 +72,7 @@ Quando algum dado está errado, o JavaScript lança um erro (`throw new Error`),
 
 ## Uso de inteligência artificial
 
-Este projeto foi desenvolvido com auxílio da ferramenta de inteligência artificial **Claude** (Anthropic), usada para gerar o código (HTML, CSS e JavaScript), as ilustrações e este README.
+Este projeto foi desenvolvido com auxílio da ferramenta de inteligência artificial **Claude**.
 
 ## Autor
 
