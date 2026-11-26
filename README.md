@@ -69,3 +69,7 @@ Quando algum dado está errado, o JavaScript lança um erro (`throw new Error`),
 
 - **Imagens** (`img/`): ilustrações em SVG criadas para este projeto.
 - **Valores de gravidade dos planetas:** NASA – Planetary Fact Sheet (https://nssdc.gsfc.nasa.gov/planetary/factsheet/).
+
+## Autor
+
+Gustavo Vinicius Batistella
