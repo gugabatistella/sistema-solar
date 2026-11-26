@@ -67,5 +67,5 @@ Quando algum dado está errado, o JavaScript lança um erro (`throw new Error`),
 
 ## Origem dos recursos
 
-- **Imagens** (`img/`): ilustrações em SVG criadas para este projeto com auxílio de inteligência artificial (Claude, da Anthropic).
+- **Imagens** (`img/`): ilustrações em SVG criadas para este projeto.
 - **Valores de gravidade dos planetas:** NASA – Planetary Fact Sheet (https://nssdc.gsfc.nasa.gov/planetary/factsheet/).
