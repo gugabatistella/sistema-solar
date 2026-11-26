@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre os planetas do Sistema Solar com calculadora de peso em outros planetas.">
+    <title>Viagem pelo Sistema Solar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#inicio" class="logo">Viagem pelo Sistema Solar 🪐</a>
+
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#planetas">Planetas</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="inicio">
+
+            <div class="apresentacao">
+                <p class="subtitulo">EXPLORE O ESPAÇO</p>
+
+                <h1>Uma viagem pelos planetas do nosso Sistema Solar.</h1>
+
+                <p>
+                    O Sistema Solar é formado pelo Sol e por tudo o que gira ao redor dele:
+                    planetas, luas, asteroides e cometas. Venha conhecer os oito planetas
+                    e descubra quanto você pesaria em cada um deles!
+                </p>
+
+                <a href="#planetas" class="botao">Conhecer os planetas</a>
+            </div>
+
+            <img src="img/sistema-solar.svg" alt="Ilustração do Sol com planetas girando em suas órbitas" class="imagem-inicio">
+        </section>
+
+        <section id="planetas" class="planetas">
+            <p class="subtitulo">CONHEÇA OS VIZINHOS</p>
+
+            <h2>Os planetas</h2>
+
+            <p class="descricao">
+                Os quatro planetas mais próximos do Sol são rochosos. Os quatro mais
+                distantes são gigantes formados principalmente por gases e gelo.
+            </p>
+
+            <div class="cards">
+                <article class="card">
+                    <img src="img/terra.svg" alt="Ilustração do planeta Terra, azul com continentes verdes">
+                    <h3>Terra</h3>
+                    <p>O único planeta conhecido com água líquida na superfície e com vida.</p>
+                </article>
+
+                <article class="card">
+                    <img src="img/marte.svg" alt="Ilustração do planeta Marte, de cor avermelhada com crateras">
+                    <h3>Marte</h3>
+                    <p>Chamado de Planeta Vermelho por causa do óxido de ferro (ferrugem) do seu solo.</p>
+                </article>
+
+                <article class="card">
+                    <img src="img/jupiter.svg" alt="Ilustração do planeta Júpiter, com faixas bege e marrons e uma mancha vermelha">
+                    <h3>Júpiter</h3>
+                    <p>O maior planeta. Sua Grande Mancha Vermelha é uma tempestade maior que a Terra.</p>
+                </article>
+
+                <article class="card">
+                    <img src="img/saturno.svg" alt="Ilustração do planeta Saturno, amarelado e cercado por anéis">
+                    <h3>Saturno</h3>
+                    <p>Famoso pelos seus anéis, formados por pedaços de gelo e rocha.</p>
+                </article>
+            </div>
+
+            <h3 class="titulo-lista">Ordem dos planetas a partir do Sol</h3>
+
+            <ol class="lista-planetas">
+                <li><strong>Mercúrio</strong> – o menor planeta e o mais próximo do Sol.</li>
+                <li><strong>Vênus</strong> – o mais quente, por causa da sua atmosfera espessa.</li>
+                <li><strong>Terra</strong> – o nosso planeta.</li>
+                <li><strong>Marte</strong> – o Planeta Vermelho.</li>
+                <li><strong>Júpiter</strong> – o maior de todos.</li>
+                <li><strong>Saturno</strong> – o planeta dos anéis mais famosos.</li>
+                <li><strong>Urano</strong> – gira "deitado", com o eixo muito inclinado.</li>
+                <li><strong>Netuno</strong> – o mais distante e com os ventos mais fortes.</li>
+            </ol>
+        </section>
+
+        <section id="curiosidades" class="curiosidades">
+            <p class="subtitulo">VOCÊ SABIA?</p>
+
+            <h2>Curiosidades</h2>
+
+            <ul class="lista-curiosidades">
+                <li>Em Vênus, um dia (uma volta em torno de si mesmo) dura mais do que um ano (uma volta ao redor do Sol).</li>
+                <li>Caberiam mais de 1.300 planetas Terra dentro de Júpiter.</li>
+                <li>Saturno é tão leve para o seu tamanho que flutuaria se existisse uma banheira grande o suficiente.</li>
+                <li>A luz do Sol leva cerca de 8 minutos para chegar até a Terra.</li>
+                <li>O Monte Olimpo, em Marte, é o maior vulcão conhecido do Sistema Solar.</li>
+                <li>Em Netuno, os ventos podem passar de 2.000 km/h.</li>
+            </ul>
+        </section>
+
+        <section id="calculadora" class="calculadora">
+            <p class="subtitulo">FAÇA O TESTE</p>
+
+            <h2>Quanto você pesaria em outro planeta?</h2>
+
+            <p class="descricao">
+                A gravidade muda de um planeta para outro, por isso a balança marcaria
+                um valor diferente. Preencha os dados e descubra!
+            </p>
+
+            <form id="formulario" class="formulario" novalidate>
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex.: Gustavo" autocomplete="off">
+
+                <label for="peso">Seu peso na Terra (kg)</label>
+                <input type="number" id="peso" name="peso" placeholder="Ex.: 55">
+
+                <button type="submit" class="botao">Calcular</button>
+                <p id="mensagem" class="mensagem" role="status"></p>
+            </form>
+
+            <div class="painel-resultado">
+                <h3>Seu peso em cada planeta</h3>
+                <dl class="resumo">
+                    <dt>Mercúrio</dt>
+                    <dd id="mercurio">—</dd>
+                    <dt>Vênus</dt>
+                    <dd id="venus">—</dd>
+                    <dt>Marte</dt>
+                    <dd id="marte">—</dd>
+                    <dt>Júpiter</dt>
+                    <dd id="jupiter">—</dd>
+                    <dt>Saturno</dt>
+                    <dd id="saturno">—</dd>
+                    <dt>Urano</dt>
+                    <dd id="urano">—</dd>
+                    <dt>Netuno</dt>
+                    <dd id="netuno">—</dd>
+                </dl>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Viagem pelo Sistema Solar – Projeto da Unidade Curricular Programação de Aplicativos.</p>
+        <p>Imagens: ilustrações criadas para este projeto com auxílio de inteligência artificial (Claude). Valores de gravidade: NASA.</p>
+    </footer>
+</body>
+</html>
