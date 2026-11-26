@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <clipPath id="planeta"><circle cx="100" cy="100" r="90"/></clipPath>
+  <g clip-path="url(#planeta)">
+    <rect width="200" height="200" fill="#e3c9a0"/>
+    <rect y="50" width="200" height="16" fill="#b9875a"/>
+    <rect y="85" width="200" height="12" fill="#c99a6b"/>
+    <rect y="120" width="200" height="18" fill="#b9875a"/>
+    <rect y="155" width="200" height="10" fill="#c99a6b"/>
+    <ellipse cx="135" cy="128" rx="20" ry="11" fill="#c0442c"/>
+  </g>
+</svg>
